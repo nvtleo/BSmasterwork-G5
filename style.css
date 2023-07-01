@@ -106,13 +106,14 @@
 
 .w3l-faq-block .w3l-faq ul li {
     position: relative;
-    padding: 25px 50px 25px 20px;
-    border: 1px solid var(--border-color);
-    margin: 0 0 15px px 0;
+    padding: 25px 50px 25px px 20px;
+    border: 1px solid #eee;
+    margin: 0 0 15px 0;
     border-radius: 6px;
     background: #fff;
-    transition: 0;
-    list-style: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+    padding: 20px;
 }
 
 .w3l-faq-block .w3l-faq ul li input[type=checkbox] {
@@ -127,14 +128,6 @@
     -webkit-appearance: none;
 }
 
-.w3l-faq-block .w3l-faq ul li i {
-    position: absolute;
-    transform: translate(-6px, 0);
-    margin-top: 16px;
-    right: 25px;
-    top: 16px;
-}
-
 .w3l-faq-block .w3l-faq h2 {
     font-size: 20px;
     line-height: 1;
@@ -146,7 +139,7 @@
     /* list-style: none; */
 }
 
- .faq-page p {
+.faq-page p {
     display: none;
     transition: all 1s;
     padding: 5px;
@@ -172,4 +165,11 @@ input[type="checkbox"]:checked+i+h2+p {
     background-color: var(--title-color);
     width: 3px;
     height: 9px;
+}
+.w3l-faq-block .w3l-faq ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 25px;
+    top: 16px;
 }
