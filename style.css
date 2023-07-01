@@ -84,6 +84,7 @@
     margin-right: -15px;
     margin-left: -15px;
 }
+
 .w3l-faq-block .w3l-faq ul {
     list-style: none;
     padding: 0;
@@ -95,20 +96,22 @@
     display: block;
 }
 
-.w3l-faq-block .w3l-faq ul li input[type=checkbox]:checked ~ i:before {
+.w3l-faq-block .w3l-faq ul li input[type=checkbox]:checked~i:before {
     transform: translate(2px, 0) rotate(45deg);
 }
 
-.w3l-faq-block .w3l-faq ul li input[type=checkbox]:checked ~ i:after {
+.w3l-faq-block .w3l-faq ul li input[type=checkbox]:checked~i:after {
     transform: translate(-2px, 0) rotate(-45deg);
 }
+
 .w3l-faq-block .w3l-faq ul li {
     position: relative;
     padding: 25px 50px 25px 20px;
     border: 1px solid var(--border-color);
     margin: 0 0 15px px 0;
-    border-radius: var(--card-curve);
-    background: var(--bg-color);
+    border-radius: 6px;
+    background: #fff;
+    transition: 0;
     list-style: none;
 }
 
@@ -117,7 +120,7 @@
     cursor: pointer;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     top: 0;
     left: 0;
@@ -131,6 +134,7 @@
     right: 25px;
     top: 16px;
 }
+
 .w3l-faq-block .w3l-faq h2 {
     font-size: 20px;
     line-height: 1;
@@ -140,4 +144,32 @@
     cursor: pointer;
     color: var(--title-color);
     /* list-style: none; */
+}
+
+ .faq-page p {
+    display: none;
+    transition: all 1s;
+    padding: 5px;
+}
+
+input[type="checkbox"]:checked+i+h2+p {
+    display: block;
+}
+
+.w3l-faq-block .w3l-faq ul li i:before,
+.w3l-faq-block .w3l-faq ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: var(--title-color);
+    width: 8px;
+    height: 9px;
+}
+
+.w3l-faq-block .w3l-faq ul li i:before,
+.w3l-faq-block .w3l-faq ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: var(--title-color);
+    width: 3px;
+    height: 9px;
 }
