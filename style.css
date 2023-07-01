@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* PROJECT */
+.new-block {
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
+        url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 480px;
+    display: grid;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.w3l-index4 .middle-section {
+    max-width: 550px;
+}
+
+.w3l-index4 .middle-section h2 {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.w3l-index4 .link-list-menu p {
+    font-size: 16px;
+    color: #eee;
+    line-height: 24.5px;
+}
+
+.theme-button {
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+
+/*  QUESTION */
+.header-section {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.sub-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700px;
+    color: red;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.header-section h3 {
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.header-section p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.w3l-faq-block .w3l-faq ul {
+    list-style: none;
+    padding: 0;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.input:checked div {
+    display: block;
+}
+
+.w3l-faq-block .w3l-faq ul li input[type=checkbox]:checked ~ i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+.w3l-faq-block .w3l-faq ul li input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+.w3l-faq-block .w3l-faq ul li {
+    position: relative;
+    padding: 25px 50px 25px 20px;
+    border: 1px solid var(--border-color);
+    margin: 0 0 15px px 0;
+    border-radius: var(--card-curve);
+    background: var(--bg-color);
+    list-style: none;
+}
+
+.w3l-faq-block .w3l-faq ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    -webkit-appearance: none;
+}
+
+.w3l-faq-block .w3l-faq ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 25px;
+    top: 16px;
+}
+.w3l-faq-block .w3l-faq h2 {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    color: var(--title-color);
+    /* list-style: none; */
+}
