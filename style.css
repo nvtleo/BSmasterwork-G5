@@ -4,7 +4,71 @@
     box-sizing: border-box;
 }
 
+.comtainer {
+    width: 95%;
+    margin: auto;
+}
+
+
 html,
 body {
     font-family: 'Nunito', sans-serif;
+}
+
+header .navbarms {
+    display: flex;
+    padding: 20px 30px;
+}
+
+.navbar__logo {
+    width: 40%;
+    font-size: 30px;
+    color: #dc4f72;
+}
+
+.navbar__text {
+    width: 60%;
+}
+
+.nav__text {
+    display: flex;
+}
+
+.navbar__text ul li {
+    padding: 0 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar__text {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__text a {
+    color: black;
+    font-size: 24px;
+}
+
+.button__top button {
+    padding: 10px;
+}
+
+.navbar__text a:hover {
+    color: #dc4f72;
+}
+
+.button__top a {
+    color: #dc4f72;
+}
+
+.button__top a:hover {
+    color: white;
+    background-color: #dc4f72;
+    transition: all 0.5s;
+}
+
+.theme-button {
+    font-size: 15px;
+    padding: 15px;
 }

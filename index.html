@@ -18,12 +18,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font flaticon -->
+    <link rel="stylesheet" href="./flaticon/flaticon.css">
     <!-- STYLE  -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav class="navbarms navbar-expand-lg navbar-white bg-white">
+            <a class="navbar__logo" href="#">Masterwork
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar__text collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Blog Post</a>
+                            <a class="dropdown-item" href="#">Landing Page</a>
+                            <a class="dropdown-item" href="#">404 Pages</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="button__top">
+                    <a class="btn btn-outline-danger theme-button" href="#demourl" bis_skin_checked="1">
+                        Schedule a Demo </a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <section class="carousel"></section>
     <section class="business"></section>
     <section class="company"></section>
