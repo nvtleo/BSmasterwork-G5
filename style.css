@@ -15,6 +15,20 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+
+
+.ani__header {
+    transition: all 0.8s;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
 header .navbarms {
     display: flex;
     padding: 20px 30px;
@@ -78,6 +92,10 @@ header .navbarms {
     background-color: #f9fbfd
 }
 
+.header__search :hover {
+    color: black;
+}
+
 .navbar__text a:hover {
     color: #dc4f72;
 }
@@ -95,4 +113,45 @@ header .navbarms {
 .theme-button {
     font-size: 15px;
     padding: 15px;
+}
+
+.ldtheme {
+    border: none;
+}
+
+.ldtheme i {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+/* light theme  */
+#myBody {
+    background-color: white;
+}
+
+#switchButton .fa-sun {
+    display: none;
+}
+
+#switchButton .fa-moon {
+    display: block;
+}
+
+/* dark theme  */
+.dark#myBody {
+    background-color: black;
+}
+
+.dark #switchButton .fa-sun {
+    display: block;
+    color: white;
+}
+
+.dark #switchButton .fa-moon {
+    display: none;
+}
+
+.dark .change {
+    background-color: black;
+    color: white;
 }
