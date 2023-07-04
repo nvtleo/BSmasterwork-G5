@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.comtainer {
+.containerMS {
     width: 95%;
     margin: auto;
 }
@@ -22,11 +22,10 @@ body {
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
 
-.fixed-top {
+.header__fixed {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
 }
 
 header .navbarms {
@@ -61,6 +60,10 @@ header .navbarms {
     padding: 0 10px;
     text-decoration: none;
     list-style: none;
+}
+
+.nav-item i {
+    font-size: 15px;
 }
 
 .navbar__text {
@@ -110,6 +113,10 @@ header .navbarms {
     transition: all 0.5s;
 }
 
+.active a {
+    color: #dc4f72;
+}
+
 .theme-button {
     font-size: 15px;
     padding: 15px;
@@ -154,4 +161,22 @@ header .navbarms {
 .dark .change {
     background-color: black;
     color: white;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    display: block;
+    background-color: #dc4f72;
+    transition: all 0.5s;
+}
+
+.nav-link:hover::after {
+    width: 40%;
+}
+
+/* CAROUSEL  */
+.card {
+    border: none;
 }

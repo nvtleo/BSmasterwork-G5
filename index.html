@@ -25,7 +25,7 @@
 </head>
 
 <body id="myBody">
-    <header class="ani__header fixed-top">
+    <header class="ani__header containerMS ">
         <nav class="navbarms navbar-expand-lg ">
             <a class="navbar__logo" href="#">
                 <span>
@@ -40,7 +40,7 @@
             <div class="navbar__text collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="nav">
                     <li class="nav-item active">
-                        <a class="nav-link change" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link change" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link change" href="#">About</a>
@@ -49,10 +49,11 @@
                         <a class="nav-link change" href="#">Service</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle change" href="#" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link change " href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                             Pages
+                            <i class="fa-solid fa-angle-down"></i>
                         </a>
+
                         <div class="dropdown-menu">
                             <a class="dropdown-item change" href="#">Blog Post</a>
                             <a class="dropdown-item change" href="#">Landing Page</a>
@@ -60,11 +61,11 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link change" href="#">Contact</a>
+                        <a class="nav-link change" href="https://wp.w3layouts.com/masterwork/contact-page/">Contact</a>
                     </li>
                 </ul>
                 <div class="header__search">
-                    <a href="">
+                    <a href="#search">
                         <i class="fa fa-search"></i>
                     </a>
                 </div>
@@ -76,14 +77,28 @@
                     <i class="far fa-moon"></i>
                     <i class="far fa-sun"></i>
                 </div>
-                <!-- <button class="ldtheme" id="switchButton" title="Click to switch theme">
-                    <i class="far fa-moon"></i>
-                    <i class="far fa-sun"></i>
-                </button> -->
             </div>
         </nav>
     </header>
-    <section class="carousel">
+    <section class="carouselMS containerMS">
+        <div class="row carousel__item">
+            <div class="col-sm-6 carousel__left">
+                <div class="card carousel__text">
+                    <div class="card-body ">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-outline-danger theme-button">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="./img/main.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="business"></section>
     <section class="company"></section>
