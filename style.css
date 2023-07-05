@@ -18,14 +18,18 @@ body {
 
 
 .ani__header {
-    transition: all 0.8s;
-    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    transition: all;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.05);
+    background-color: white;
+
 }
 
-.header__fixed {
+.fixed-top {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 header .navbarms {
@@ -163,6 +167,19 @@ header .navbarms {
     color: white;
 }
 
+.dark .crschange {
+    color: #fff;
+    background: linear-gradient(to right, black, rgba(255, 255, 255, 0.92)), url(./img/banner.jpg);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+}
+
 .nav-link::after {
     content: "";
     width: 0;
@@ -179,4 +196,64 @@ header .navbarms {
 /* CAROUSEL  */
 .card {
     border: none;
+}
+
+.carouselMS {
+    margin-top: 100px;
+}
+
+.carousel__text {
+    position: relative;
+    background: none
+}
+
+.card-body h2 {
+    font-weight: 700;
+}
+
+.carousel__right {
+    position: relative;
+    background: none;
+}
+
+.carousel__item {
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(./img/banner.jpg);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+}
+
+.carousel__item {
+    padding-top: 30px;
+    align-items: center;
+}
+
+.card-body h2 {
+    font-size: 50px;
+}
+
+.card-body p {
+    font-size: 20px;
+    padding: 20px 0 50px 0;
+}
+
+.card-body a {
+    padding: 25px 40px;
+    font-size: 20px;
+
+}
+
+.col-sm-6 {
+    max-width: 50%;
+
+}
+
+.img__crs img {
+    width: 100%;
+
 }
