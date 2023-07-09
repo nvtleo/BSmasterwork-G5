@@ -347,6 +347,7 @@ header .navbarms {
 /* COMPANY  */
 .company {
     background-color: #f7f9fc;
+    padding-bottom: 50px;
 }
 
 .company__bg {
@@ -411,4 +412,45 @@ header .navbarms {
 .company__count p {
     padding: 15px 20px;
     font-size: 20px;
+}
+
+/* PERFORM  */
+.perform {
+    position: relative;
+}
+
+.perform__text {
+    background: none;
+}
+
+.perform__text h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.perform__text p {
+    color: white;
+    font-size: 20px;
+}
+
+.perform__bg {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(./img/bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.btn__perform {
+    background-color: #fff;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+}
+
+.btn__perform:hover {
+    background-color: #e2e6ea;
+    color: black;
+}
+
+.perform__text {
+    padding: 80px 0;
 }
