@@ -194,7 +194,8 @@ header .navbarms {
     color: white;
 }
 
-.dark .companyspan {
+.dark .companyspan,
+.dark .number__count {
     color: #dc4f72;
 }
 
@@ -392,4 +393,22 @@ header .navbarms {
 
 .company__img img:hover {
     transform: translateY(-20px);
+}
+
+/* COUNT UP  */
+.company__count h5 {
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+.company__count span {
+    padding: 0 20px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #dc4f72;
+}
+
+.company__count p {
+    padding: 15px 20px;
+    font-size: 20px;
 }
