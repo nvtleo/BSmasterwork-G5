@@ -148,8 +148,12 @@ header .navbarms {
     display: block;
 }
 
+.textclr {
+    color: black;
+}
+
 /* dark theme  */
-.dark#myBody {
+.dark #myBody {
     background-color: black;
 }
 
@@ -178,6 +182,18 @@ header .navbarms {
     background-attachment: fixed;
     background-size: cover;
     align-items: center;
+}
+
+.dark .businessimg {
+    background-color: #191c1d;
+}
+
+.dark .businesstext {
+    color: white;
+}
+
+.dark .businessboder:hover {
+    border: 1px solid wheat;
 }
 
 .nav-link::after {
@@ -256,4 +272,66 @@ header .navbarms {
 .img__crs img {
     width: 100%;
 
+}
+
+/* BUSINESS  */
+.business {
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.business__header span {
+    color: #dc4f72;
+}
+
+/* business */
+.business__header span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.business__header h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.business__header p {
+    font-size: 20px;
+}
+
+.business__img a {
+    text-decoration: none;
+}
+
+.business__item {
+    padding-top: 100px;
+}
+
+.business__img {
+    padding-top: 50px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    transition: all 1s;
+
+}
+
+.business__img:hover {
+    transform: translateY(-50px);
+    transition: all 0.5s;
+    box-shadow: 2px 5px 7.5px rgba(14, 13, 13, 0.2);
+}
+
+.business__img img {
+    height: 100px;
+}
+
+.card-body h5,
+.card-body p {
+    font-size: 25px;
+}
+
+.card-title {
+    font-weight: 700;
 }
