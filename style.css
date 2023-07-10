@@ -454,3 +454,25 @@ header .navbarms {
 .perform__text {
     padding: 80px 0;
 }
+
+/* REPONSIVE */
+@media screen and (max-width:1200px) {
+    header .navbarms {
+        display: flex;
+        align-items: center;
+
+    }
+
+    header .navbar__logo {
+        width: 20%;
+    }
+
+    header .navbar__text {
+        margin-left: 6%;
+    }
+
+    .button__top a {
+        display: flex;
+        font-size: 13px;
+    }
+}
