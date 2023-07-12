@@ -21,6 +21,10 @@ body {
     transition: all;
     box-shadow: 0 3px rgba(0, 0, 0, 0.05);
     background-color: white;
+    height: 100px;
+    display: grid;
+    align-items: center;
+
 
 }
 
@@ -32,9 +36,12 @@ body {
     z-index: 10;
 }
 
+.header__scroll {
+    height: 60px;
+}
+
 header .navbarms {
     display: flex;
-    padding: 20px 30px;
     align-items: center;
 }
 
@@ -43,9 +50,13 @@ header .navbarms {
 }
 
 .navbar__logo {
-    width: 40%;
+    width: 20%;
     font-size: 30px;
     color: #dc4f72;
+}
+
+.navbar__logo span {
+    display: block;
 }
 
 .navbar__logo:hover {
@@ -53,15 +64,19 @@ header .navbarms {
 }
 
 .navbar__text {
-    width: 60%;
+    width: 80%;
 }
 
 .nav__text {
     display: flex;
 }
 
+.navbar__text ul {
+    margin-left: auto;
+}
+
 .navbar__text ul li {
-    padding: 0 10px;
+    padding: 0 15px;
     text-decoration: none;
     list-style: none;
 }
@@ -77,25 +92,35 @@ header .navbarms {
 
 .navbar__text a {
     color: black;
-    font-size: 20px;
+    font-size: 16px;
+    padding: 14px 0;
+    font-weight: 400;
 }
 
-.button__top button {
-    padding: 10px;
+.button__top a {
+    padding: 0 16px;
+    line-height: 50px;
 }
 
+.navbar__close {
+    display: none;
+}
+
+/* .header__search {
+    padding-right: 20px;
+} */
 .header__search {
-    padding-right: 30px;
+    padding-right: 10px;
 }
 
 .header__search a i {
     color: gray;
     border: 1px solid #f9fbfd;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     background-color: #f9fbfd
 }
 
@@ -123,7 +148,7 @@ header .navbarms {
 
 .theme-button {
     font-size: 15px;
-    padding: 15px;
+    display: inline-block;
 }
 
 .ldtheme {
@@ -351,7 +376,7 @@ header .navbarms {
 }
 
 .company__bg {
-    padding: 30px;
+    padding: 10px;
 }
 
 .company__item {
@@ -385,7 +410,7 @@ header .navbarms {
 
 .company__img img {
     width: 100%;
-    height: 500px;
+    height: auto;
     border-radius: 10px;
     background-size: 200%;
     background-repeat: no-repeat;
@@ -463,16 +488,45 @@ header .navbarms {
 
     }
 
-    header .navbar__logo {
-        width: 20%;
+    header .navbar__logo span {
+        display: flex;
+        align-items: center;
     }
 
     header .navbar__text {
-        margin-left: 6%;
+        margin-left: auto;
     }
 
     .button__top a {
         display: flex;
-        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .navbar-toggler-icon {
+        background-color: #dc4f72;
+        color: white;
+        align-items: center;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .button__top {
+        display: none;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .ldtheme {
+        position: absolute;
+        top: 21px;
+        right: 60px;
+    }
+
+    .navbar__text {
+        display: inline;
     }
 }
