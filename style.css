@@ -119,7 +119,7 @@
     border: 1px solid #eee;
     margin: 0 0 15px 0;
     border-radius: 6px;
-    background: #ffffff;
+    /* background: #ffffff; */
     transition: 0.3s ease;
     cursor: pointer;
     padding: 20px;
@@ -144,7 +144,7 @@
     display: block;
     margin: 0;
     cursor: pointer;
-    color: var(--title-color);
+    /* color: var(--title-color); */
     /* list-style: none; */
 }
 
@@ -164,7 +164,7 @@ input[type="checkbox"]:checked+i+h2+p {
 }
 
 .w3l-faq-block .w3l-faq p {
-    color: var(--text-color);
+    /* color: var(--text-color); */
     font-size: 16px;
     line-height: 24.5px;
     position: relative;
@@ -190,7 +190,7 @@ input[type="checkbox"]:checked+i+h2+p {
     margin-top: 16px;
     right: 25px;
     top: 16px;
-    color: black;
+    /* color: black; */
 }
 
 /* PROJECT */
@@ -237,7 +237,7 @@ input[type="checkbox"]:checked+i+h2+p {
     background-color: none;
 }
 
-.projects__bottom .nav {}
+/* .projects__bottom .nav {} */
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
@@ -316,7 +316,7 @@ input[type="checkbox"]:checked+i+h2+p {
     margin: 0 auto;
     padding: 2rem;
     display: flex;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 6px;
 }
 
@@ -495,7 +495,7 @@ footer .container-fluid .wrapper .main-row {
 footer .container-fluid .wrapper .main-row .column .footer-heading h3 {
     font-size: 20px;
     font-weight: 700;
-    color: #2C3038;
+    /* color: #2C3038; */
     letter-spacing: 0;
     line-height: 25px;
     margin-bottom: 30px;
@@ -519,7 +519,7 @@ footer .container-fluid .wrapper .main-row .column .footer-body ul li {
 
 
 footer .container-fluid .wrapper .main-row .form-handle .footer-body {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px 40px;
     border-radius: 10px;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
@@ -528,14 +528,14 @@ footer .container-fluid .wrapper .main-row .form-handle .footer-body {
 footer .container-fluid .wrapper .main-row .form-handle .footer-body .end-column h4 {
     font-size: 18px;
     font-weight: 500;
-    color: #2C3038;
+    /* color: #2C3038; */
     letter-spacing: 0;
     line-height: 25px;
     padding: 20px 0;
 }
 
 footer .container-fluid .wrapper .main-row .form-handle .footer-body .end-column form input {
-    background: #f7f9fc;
+    /* background: #f7f9fc; */
     border: none;
     padding: 12px 20px;
     font-size: 16px;
@@ -611,19 +611,6 @@ footer .container-fluid .wrapper .copyright .columns-2 .social li a {
     color: red;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 * {
     padding: 0;
     margin: 0;
@@ -663,7 +650,7 @@ body {
 }
 
 .header__scroll {
-    height: 60px;
+    height: 80px;
 }
 
 header .navbarms {
@@ -803,6 +790,10 @@ header .navbarms {
     color: black;
 }
 
+.bglight {
+    background-color: white;
+}
+
 /* dark theme  */
 .dark #myBody {
     background-color: black;
@@ -835,14 +826,35 @@ header .navbarms {
     align-items: center;
 }
 
+.dark .clientsbgg {
+    color: white;
+    background: linear-gradient(to right, black, rgba(255, 255, 255, 0.92)), url(./img/thauhn.jpg);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+}
+
 .dark .businessimg,
 .dark .companybg {
     background-color: #191c1d;
     color: white;
 }
 
+.dark .questionbg {
+    background-color: #191c1d;
+}
+
 .dark .businesstext {
     color: white;
+}
+
+.dark .questiontext {
+    background-color: #000;
 }
 
 .dark .companyspan,
@@ -854,7 +866,7 @@ header .navbarms {
     border: 1px solid wheat;
 }
 
-.nav-link::after {
+.nav-linkk::after {
     content: "";
     width: 0;
     height: 3px;
@@ -863,7 +875,7 @@ header .navbarms {
     transition: all 0.5s;
 }
 
-.nav-link:hover::after {
+.nav-linkk:hover::after {
     width: 40%;
 }
 
@@ -1152,12 +1164,13 @@ header .navbarms {
         right: 60px;
     }
 
-@media (min-width: 576px){
-    footer .container-fluid .wrapper .copyright {
-        justify-content: center;
-        margin-top: 50px;
+    @media (min-width: 576px) {
+        footer .container-fluid .wrapper .copyright {
+            justify-content: center;
+            margin-top: 50px;
+        }
     }
-}
+
     .navbar__text {
         display: inline;
     }
